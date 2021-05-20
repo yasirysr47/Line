@@ -1,0 +1,26 @@
+{
+    "user4": {
+        "avg_return_score": 39.166666666666664,
+        "ability_to_sub": false,
+        "score": 41.166666666666664,
+        "loan_amount": 68
+    },
+    "user3": {
+        "avg_return_score": 47.69230769230769,
+        "ability_to_sub": true,
+        "score": 72.6923076923077,
+        "loan_amount": 133
+    },
+    "user2": {
+        "avg_return_score": 37.58620689655172,
+        "ability_to_sub": true,
+        "score": 51.58620689655172,
+        "loan_amount": 77
+    },
+    "user1": {
+        "avg_return_score": 48.26086956521739,
+        "ability_to_sub": true,
+        "score": 78.26086956521739,
+        "loan_amount": 114
+    }
+}

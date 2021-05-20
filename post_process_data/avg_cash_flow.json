@@ -1,0 +1,52 @@
+{
+    "user4": {
+        "avg_expense": -4294.598333333334,
+        "avg_income": 4340.821666666667,
+        "avg_savings": 46.22333333333245,
+        "total_savings": 277.3399999999947,
+        "avg_subscription": 0.0,
+        "avg_bank_fee": 0.0,
+        "avg_basic_expense": -228.74666666666664,
+        "primary_bank": [
+            "rzb1dmpra7faad6wz80ouko05jnwekuyeqgym"
+        ]
+    },
+    "user3": {
+        "avg_expense": -2636.543846153846,
+        "avg_income": 2600.7469230769234,
+        "avg_savings": -35.79692307692267,
+        "total_savings": -465.35999999999797,
+        "avg_subscription": 0.0,
+        "avg_bank_fee": -203.57692307692307,
+        "avg_basic_expense": -185.76846153846157,
+        "primary_bank": [
+            "eg41pdnvrpip3jeynkdrfk8pna05lntpapzqz"
+        ]
+    },
+    "user2": {
+        "avg_expense": -4761.821379310345,
+        "avg_income": 4812.055172413795,
+        "avg_savings": 50.2337931034499,
+        "total_savings": 1456.780000000004,
+        "avg_subscription": -19.224137931034484,
+        "avg_bank_fee": -2.37,
+        "avg_basic_expense": -2075.365517241379,
+        "primary_bank": [
+            "yljny4edz4trm9xlxl1vi6aoa4bv7lupp5e55"
+        ]
+    },
+    "user1": {
+        "avg_expense": -7797.845217391305,
+        "avg_income": 7856.546086956521,
+        "avg_savings": 58.700869565216635,
+        "total_savings": 1350.1199999999794,
+        "avg_subscription": -0.1852173913043478,
+        "avg_bank_fee": -13.546956521739132,
+        "avg_basic_expense": -3642.4321739130437,
+        "primary_bank": [
+            "npzje7ndm3skyavxqxaytdjy3qwkzatajny1y",
+            "zkkyv365adspy0lmvr6ztkjaoa8bo4iodvrbq",
+            "qvnxd0pabqukwdrxe9dmiaqk7x3g54seednap"
+        ]
+    }
+}
