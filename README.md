@@ -1,14 +1,20 @@
-# Starting the program:
+# LINE
+## How to Begin
+### Starting the program:
+```
 python3 run.py
+```
 
 the screen will display the following:
-'''
+
 available users in the database are:
+```
 user4
 user3
 user2
 user1
-(list of all users)
+_(list of all users)_
+```
 ---------------
 available functionalities are :
 
@@ -27,10 +33,18 @@ available functionalities are :
     7. users ability to pay the subscription fees
 
 
-============================================================
+---------------
 enter your input in the following way for the result
-<USER NAME> <FUNCTION NUMBER>
-type exit to stop
-------------------------------------------------------------
+> _**USER_NAME** **FUNCTION_NUMBER**_
 
-'''
+> type **exit** to stop
+---------------
+Example:
+> user1 5
+> 
+> user3 3
+> 
+> user4 7
+> 
+> user2 2
+
