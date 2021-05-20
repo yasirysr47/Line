@@ -52,8 +52,11 @@ def run():
                 print("{} is eligible for a monthly subscription.".format(user))
             else:
                 print("{} is not eligible for a monthly subscription.".format(user))
-        elif func == 6:    
-            print("{} can pay the amount back in 2 months. (confidence = {:.2f}%)".format(user, elg_dic.get(x)))
+        elif func == 6:
+            if elg_dic.get(x, 0) > 45:
+                print("{} can pay back ¼th of line credit every 15 days and return the entire line of credit back within 8 weeks. (confidence = {:.2f}%)".format(user, elg_dic.get(x)))
+            else:
+                print("{} cannot pay back the amount in 8 weeks. (confidence = {:.2f}%)".format(user, 100-elg_dic.get(x)))
         elif func == 5:    
             print("{} is eligible for ${:.2f}".format(user, elg_dic.get(x)))
         elif func == 4:    
