@@ -65,6 +65,17 @@
             "subscription": 0.0,
             "bank_fee": 0,
             "basic_expense": -150.97999999999993
+        },
+        "3-2021": {
+            "half_month_income": 2646.4900000000002,
+            "half_month_expense": -2240.2900000000004,
+            "income": 2646.4900000000002,
+            "expense": -2307.2900000000004,
+            "savings": 339.1999999999998,
+            "total_savings": 616.5399999999945,
+            "subscription": 0,
+            "bank_fee": -67.0,
+            "basic_expense": -77.53999999999999
         }
     },
     "user3": {
@@ -210,6 +221,17 @@
             "subscription": 0,
             "bank_fee": -277.0,
             "basic_expense": -80.26
+        },
+        "3-2021": {
+            "half_month_income": 1257.87,
+            "half_month_expense": -1258.53,
+            "income": 1257.87,
+            "expense": -1360.53,
+            "savings": -102.66000000000008,
+            "total_savings": -568.019999999998,
+            "subscription": 0,
+            "bank_fee": -102.0,
+            "basic_expense": 0
         }
     },
     "user2": {
@@ -531,6 +553,17 @@
             "subscription": 0,
             "bank_fee": 0,
             "basic_expense": 536.93
+        },
+        "3-2021": {
+            "half_month_income": 0,
+            "half_month_expense": 529.14,
+            "income": 0,
+            "expense": 529.14,
+            "savings": 529.14,
+            "total_savings": 1985.9200000000042,
+            "subscription": -9.99,
+            "bank_fee": 0,
+            "basic_expense": 603.46
         }
     },
     "user1": {
@@ -786,6 +819,17 @@
             "subscription": 0,
             "bank_fee": -8.47,
             "basic_expense": -4361.949999999999
+        },
+        "3-2021": {
+            "half_month_income": 2355.29,
+            "half_month_expense": -2228.11,
+            "income": 2355.29,
+            "expense": -2229.01,
+            "savings": 126.27999999999975,
+            "total_savings": 1476.3999999999792,
+            "subscription": 0,
+            "bank_fee": -0.9,
+            "basic_expense": -1028.6699999999998
         }
     }
 }

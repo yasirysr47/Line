@@ -224,34 +224,19 @@ class PreProcess():
 
             cur_year = date.year
             cur_month = date.month
-            # self.monthly_subscriptions = []
-            # self.primary_bank = dict()
-            # self.half_month_income_list = []
-            # self.monthly_income_list = []
-            # self.half_month_expense_list = []
-            # self.monthly_expense_list = []
-            # self.monthly_basic_expense_list = []
-            # self.monthly_debt = []
-            # self.monthly_bank_fee = []
+
             if prev_month and prev_month != cur_month:
                 self.half_month_expense_list.append(half_month_expense)
-                #self.half_month_expense_list.append(monthly_expense - half_month_expense)
-
                 self.monthly_expense_list.append(monthly_expense)
-
                 self.monthly_basic_expense_list.append(basic_expense)
-
                 self.half_month_income_list.append(half_month_income)
-                #self.half_month_income_list.append(monthly_income - half_month_income)
-
                 self.monthly_income_list.append(monthly_income)
-                
                 self.monthly_bank_fee.append(bank_fee)
                 self.monthly_subscriptions.append(subscription)
                 self.monthly_debt.append(debt)
-                
-    
+
                 self.process_for_monthly_data(prev_month, prev_year)
+
                 start_date = 1
                 cur_month = 0
                 prev_month = 0
@@ -332,9 +317,20 @@ class PreProcess():
                         if half_flag:
                             half_month_expense += amount
                     monthly_expense += amount
-
+            
             prev_month = cur_month
             prev_year = cur_year
+        
+        self.half_month_expense_list.append(half_month_expense)
+        self.monthly_expense_list.append(monthly_expense)
+        self.monthly_basic_expense_list.append(basic_expense)
+        self.half_month_income_list.append(half_month_income)
+        self.monthly_income_list.append(monthly_income)
+        self.monthly_bank_fee.append(bank_fee)
+        self.monthly_subscriptions.append(subscription)
+        self.monthly_debt.append(debt)
+        
+        self.process_for_monthly_data(prev_month, prev_year)
 
     def post_process(self):
         '''

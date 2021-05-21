@@ -70,7 +70,7 @@ class Eval():
         if (total_savings + basic_expense) + variable >= self.min_loan/2:
             score = score + max_boost * 0.1
 
-        if subs != 0:
+        if (subs * -1) >= self.sub_fee:
             score += max_boost
             ability_to_sub = True
         
@@ -88,10 +88,9 @@ class Eval():
             subscription = data.get("avg_subscription")
             avg_basic_expense = data.get("avg_basic_expense")
 
-            if self.eligible_dict[key]["eligible"]/self.eligible_dict[key]["not_eligible"] > 0.75:
+            if self.eligible_dict[key]["eligible"]/self.eligible_dict[key]["not_eligible"] > 1:
                 current_avg_score = current_avg_score + 25
                 self.eligible_dict[key]["ability_to_sub"] = True
-
 
             new_score, ability_to_sub = self.boost_score(current_avg_score, avg_savings, total_savings, avg_basic_expense, subscription)
             if not self.eligible_dict[key]["ability_to_sub"]:
@@ -131,7 +130,7 @@ class Eval():
         self.eligible_dict = eligibility_count_dict
 
 
-    def print_dic(self, ):
+    def print_dic(self):
         print(self.eligible_dict)
 
     def write_to_file(self):
@@ -145,8 +144,6 @@ class Eval():
         self.generate_eligible_dict()
         self.boost_eligibility_score()
         self.write_to_file()
-       
-        #self.print_dic()
 
 
 
