@@ -5,7 +5,7 @@ import json
 import pandas as pd
 from utils import *
 from utils import clean_username
-from config import user_data_files
+from config import user_data_files, cashflow_file, avg_cashflow_file, bank_details_filename
 from datetime import datetime
 
 
@@ -337,9 +337,9 @@ class PreProcess():
         '''
         if not os.path.exists('post_process_data'):
             os.makedirs('post_process_data')
-        cash_flow_file = "./post_process_data/cash_flow.json"
-        avg_cash_flow_file = "./post_process_data/avg_cash_flow.json"
-        bank_details_file = "./post_process_data/bank_details.json"
+        cash_flow_file = cashflow_file
+        avg_cash_flow_file = avg_cashflow_file
+        bank_details_file = bank_details_filename
         process_file = [(self.cashflow_map, cash_flow_file),
                         (self.avg_cashflow, avg_cash_flow_file),
                         (self.primary_bank_dict, bank_details_file)]
